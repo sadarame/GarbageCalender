@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		16968CC1265A310700A4A2AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16968CC0265A310700A4A2AB /* ContentView.swift */; };
 		16968CC3265A310C00A4A2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16968CC2265A310C00A4A2AB /* Assets.xcassets */; };
 		16968CC6265A310C00A4A2AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16968CC5265A310C00A4A2AB /* Preview Assets.xcassets */; };
+		16968CCE265A360200A4A2AB /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16968CCD265A360200A4A2AB /* CalenderView.swift */; };
+		BD66FCFDF67AC1CECB29C0FE /* Pods_GarbageCalender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881A8B82FF476B05DA9C65E0 /* Pods_GarbageCalender.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,10 @@
 		16968CC2265A310C00A4A2AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16968CC5265A310C00A4A2AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16968CC7265A310C00A4A2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16968CCD265A360200A4A2AB /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		1D8461D93329627E0F31B8BC /* Pods-GarbageCalender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarbageCalender.debug.xcconfig"; path = "Target Support Files/Pods-GarbageCalender/Pods-GarbageCalender.debug.xcconfig"; sourceTree = "<group>"; };
+		75E4FF72ACA4731C2FC5D761 /* Pods-GarbageCalender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarbageCalender.release.xcconfig"; path = "Target Support Files/Pods-GarbageCalender/Pods-GarbageCalender.release.xcconfig"; sourceTree = "<group>"; };
+		881A8B82FF476B05DA9C65E0 /* Pods_GarbageCalender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarbageCalender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD66FCFDF67AC1CECB29C0FE /* Pods_GarbageCalender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,8 @@
 			children = (
 				16968CBD265A310700A4A2AB /* GarbageCalender */,
 				16968CBC265A310700A4A2AB /* Products */,
+				5DE1E3C00BACDBF592429373 /* Pods */,
+				F7242D00950CF49BF8CDCE1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +66,7 @@
 				16968CC2265A310C00A4A2AB /* Assets.xcassets */,
 				16968CC7265A310C00A4A2AB /* Info.plist */,
 				16968CC4265A310C00A4A2AB /* Preview Content */,
+				16968CCD265A360200A4A2AB /* CalenderView.swift */,
 			);
 			path = GarbageCalender;
 			sourceTree = "<group>";
@@ -69,6 +79,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5DE1E3C00BACDBF592429373 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D8461D93329627E0F31B8BC /* Pods-GarbageCalender.debug.xcconfig */,
+				75E4FF72ACA4731C2FC5D761 /* Pods-GarbageCalender.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7242D00950CF49BF8CDCE1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				881A8B82FF476B05DA9C65E0 /* Pods_GarbageCalender.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16968CCA265A310C00A4A2AB /* Build configuration list for PBXNativeTarget "GarbageCalender" */;
 			buildPhases = (
+				00DC92A2C5CE17707DBB4509 /* [CP] Check Pods Manifest.lock */,
 				16968CB7265A310700A4A2AB /* Sources */,
 				16968CB8265A310700A4A2AB /* Frameworks */,
 				16968CB9265A310700A4A2AB /* Resources */,
+				3400036933D32DD8AD9C70E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00DC92A2C5CE17707DBB4509 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GarbageCalender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3400036933D32DD8AD9C70E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GarbageCalender/Pods-GarbageCalender-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GarbageCalender/Pods-GarbageCalender-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GarbageCalender/Pods-GarbageCalender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16968CB7265A310700A4A2AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				16968CC1265A310700A4A2AB /* ContentView.swift in Sources */,
 				16968CBF265A310700A4A2AB /* GarbageCalenderApp.swift in Sources */,
+				16968CCE265A360200A4A2AB /* CalenderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +336,7 @@
 		};
 		16968CCB265A310C00A4A2AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8461D93329627E0F31B8BC /* Pods-GarbageCalender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +359,7 @@
 		};
 		16968CCC265A310C00A4A2AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E4FF72ACA4731C2FC5D761 /* Pods-GarbageCalender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
